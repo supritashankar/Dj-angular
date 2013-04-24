@@ -1,0 +1,4 @@
+Dj-angular
+==========
+
+django + angular
