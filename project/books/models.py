@@ -9,3 +9,6 @@ class Book(models.Model):
     author            = models.ForeignKey(User)
     publisher         = models.CharField(max_length=80)
     no_of_copies_sold = models.IntegerField(null=True, help_text="optional")
+
+    def __unicode__(self):
+        return u'{0} author being {1} publisher {2}'.format(self.name, self.author, self.publisher)
