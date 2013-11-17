@@ -11,4 +11,4 @@ class Book(models.Model):
     no_of_copies_sold = models.IntegerField(null=True, help_text="optional")
 
     def __unicode__(self):
-        return u'{0} author being {1} publisher {2}'.format(self.name, self.author, self.publisher)
+        return u'{0} author {1} publisher {2}'.format(self.name, self.author, self.publisher)
